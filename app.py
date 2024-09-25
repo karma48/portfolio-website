@@ -118,7 +118,7 @@ with tabs[1]:
     st.markdown('<div class="center-content">', unsafe_allow_html=True)
     project_data = [
         {"title": "Marketing Campaign Analysis", "description": "A/B testing of marketing campaigns to select the optimal advertising platform (AdWords, FB Ads), regression analysis to predict conversion rates and improve sales performance.", "image": "marketing.png", "link": "https://github.com/karma48/Marketing-Campaign-Analysis-A-B-Testing"},
-        {"title": "Financial Analysis- CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
+        {"title": "Financial Analysis - CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
         {"title": "Car Price Prediction", "description": "Car price prediction model using Linear Regression using data from Quikr.com. Built a web application with Flask to provide user-friendly predictions based on car details.", "image": "car.jpg", "link": "https://github.com/karma48/Car-Price-Prediction"},
        # {"title": "Stock Market Analysis and Prediction", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
       #  {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
