@@ -178,13 +178,13 @@ with tabs[3]:
             "role": "Machine Learning Engineer",
             "company": "Confidential",
             "duration": "Aug '24 - Present",
-            "description": ""
+           # "description": ""
         },
         {
             "role": "Trainee - Data Scientist",
             "company": "360DigiTMG",
             "duration": "Jun '24 - Present",
-            "description": ""
+           # "description": ""
         },
          {
             "role": "Intern - Supply Chain Analytics Analyst",
