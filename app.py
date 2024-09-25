@@ -156,25 +156,20 @@ with tabs[2]:
         {"name": "Python", "icon": "python.svg"},
     ]
 
-    # Create two columns
+    # Create two main columns for the skills
     col1, col2 = st.columns(2)
 
-    # Display the skills in 2 columns and 3 rows format
+    # Display skills in alternating columns
     for i, skill in enumerate(skill_icons):
-        col = col1 if i % 2 == 0 else col2  # Alternate between columns
+        col = col1 if i % 2 == 0 else col2  # Alternates between the columns
+        
         with col:
-            # Display each skill with an icon and text
-            st.markdown(
-                f"""
-                <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                    <img src="{skill['icon']}" alt="{skill['name']}" style="width: 20px; height: 20px; margin-right: 8px;">
-                    <span style="font-size: 16px; font-weight: bold;">{skill['name']}</span>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
-
-    st.markdown('</div>', unsafe_allow_html=True)
+            # Create sub-columns for image and text alignment
+            image_col, text_col = st.columns([1, 4])  # Adjust the ratio as needed
+            with image_col:
+                st.image(skill['icon'], width=50)  # Enlarged the image size
+            with text_col:
+                st.markdown(f"<div style='display: flex; align-items: center; height: 50px;'><span style='line-height: 1.5;'>{skill['name']}</span></div>", unsafe_allow_html=True)
 
 # Experience Section
 with tabs[3]:
