@@ -118,7 +118,7 @@ with tabs[1]:
     st.markdown('<div class="center-content">', unsafe_allow_html=True)
     project_data = [
         {"title": "Marketing Campaign Analysis", "description": "A/B testing of marketing campaigns to select the optimal advertising platform (AdWords, FB Ads), regression analysis to predict conversion rates and improve sales performance.", "image": "marketing.png", "link": "https://github.com/karma48/Marketing-Campaign-Analysis-A-B-Testing"},
-        {"title": "Financial Analysis - CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
+        {"title": "Financial Analysis- CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
         {"title": "Car Price Prediction", "description": "Car price prediction model using Linear Regression using data from Quikr.com. Built a web application with Flask to provide user-friendly predictions based on car details.", "image": "car.jpg", "link": "https://github.com/karma48/Car-Price-Prediction"},
        # {"title": "Stock Market Analysis and Prediction", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
       #  {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
@@ -156,16 +156,23 @@ with tabs[2]:
         {"name": "Python", "icon": "python.svg"},
     ]
 
-    # Display skills in rows of three using existing CSS styles
-    st.markdown('<div class="skills-row">', unsafe_allow_html=True)
-        # Display skill icons in rows of three using existing CSS styles
-    for i in range(0, len(skill_icons), 3):
-        cols = st.columns(3)  # Create three columns
-        for col, skill in zip(cols, skill_icons[i:i+3]):
-            with col:
-            # Use st.image() to correctly display local images
-                st.image(skill['icon'], caption=skill['name'], use_column_width=True)
-           
+    # Create two columns
+    col1, col2 = st.columns(2)
+
+    # Display the skills in 2 columns and 3 rows format
+    for i, skill in enumerate(skill_icons):
+        col = col1 if i % 2 == 0 else col2  # Alternate between columns
+        with col:
+            # Display each skill with an icon and text
+            st.markdown(
+                f"""
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="{skill['icon']}" alt="{skill['name']}" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <span style="font-size: 16px; font-weight: bold;">{skill['name']}</span>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
     st.markdown('</div>', unsafe_allow_html=True)
 
