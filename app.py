@@ -285,7 +285,7 @@ with tabs[5]:
     st.write(
         """
         I'm open to connecting! You can reach out through the following platforms:
-        - [LinkedIn](https://www.linkedin.com/in/nambiar-aryan/)
+        - [LinkedIn](https://www.linkedin.com/in/karma48/)
         - [GitHub](https://github.com/karma48)
         - [Email](mailto:nambiararyan24@gmail.com)
         - [WhatsApp](https://wa.link/4gis5z)
