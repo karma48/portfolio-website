@@ -117,24 +117,16 @@ I’m all about personal growth — I’m a calm, down-to-earth person who loves
 with tabs[1]:
     st.markdown('<div class="center-content">', unsafe_allow_html=True)
     project_data = [
-        {
-            "title": "Marketing Campaign Analysis",
-            "description": "A/B testing of marketing campaigns to select the optimal advertising platform (AdWords, FB Ads), regression analysis to predict conversion rates and improve sales performance.",
-            "image": "marketing.png",
-            "link": "https://github.com/karma48/Marketing-Campaign-Analysis-A-B-Testing"
-        },
-        {
-            "title": "Financial Analysis- CAPM Web App",
-            "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.",
-            "image": "finance.jpg",
-            "link": "https://github.com/karma48/CAPM"
-        },
-        {
-            "title": "Car Price Prediction",
-            "description": "Car price prediction model using Linear Regression using data from Quikr.com. Built a web application with Flask to provide user-friendly predictions based on car details.",
-            "image": "car.jpg",
-            "link": "https://github.com/karma48/Car-Price-Prediction"
-        }
+        {"title": "Marketing Campaign Analysis", "description": "A/B testing of marketing campaigns to select the optimal advertising platform (AdWords, FB Ads), regression analysis to predict conversion rates and improve sales performance.", "image": "marketing.png", "link": "https://github.com/karma48/Marketing-Campaign-Analysis-A-B-Testing"},
+        {"title": "Financial Analysis- CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
+        {"title": "Car Price Prediction", "description": "Car price prediction model using Linear Regression using data from Quikr.com. Built a web application with Flask to provide user-friendly predictions based on car details.", "image": "car.jpg", "link": "https://github.com/karma48/Car-Price-Prediction"},
+       # {"title": "Stock Market Analysis and Prediction", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
+      #  {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
+       # {"title": "Credit Card Fraud Detection", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
+      #  {"title": "Music Recommendation System", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
+      #  {"title": "Rain Prediction", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
+       # {"title": "Real Estate Price Prediction", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
+      #  {"title": "Twitter Sentiment Analysis", "description": "NLP model for text generation.", "image": "https://via.placeholder.com/250", "link": "https://github.com/yourproject2"},
     ]
 
     for project in project_data:
@@ -142,12 +134,8 @@ with tabs[1]:
         col1, col_space, col2 = st.columns([1, 0.1, 2])
         
         with col1:
-            # Use Markdown to create a clickable image
-            st.markdown(
-                f"[![{project['title']}]({project['image']})]({project['link']})",
-                unsafe_allow_html=True
-            )
-        
+            st.image(project["image"], caption=project["title"], use_column_width=True)
+ 
         with col2:
             # Styled project title with link, but no blue color or underline
             st.markdown(f'<a href="{project["link"]}" class="project-link"><h3>{project["title"]}</h3></a>', unsafe_allow_html=True)
