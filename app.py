@@ -178,13 +178,13 @@ with tabs[3]:
             "role": "Machine Learning Engineer",
             "company": "Confidential",
             "duration": "Aug '24 - Present",
-           # "description": ""
+           "description": ["Working at an early-stage startup, building and integrating AI applications to the product, enhancing product experience."]
         },
         {
             "role": "Trainee - Data Scientist",
             "company": "360DigiTMG",
             "duration": "Jun '24 - Present",
-           # "description": ""
+           "description": ["Working as a trainee, building end-to-end Data Science projects according to client requirements."]
         },
          {
             "role": "Intern - Supply Chain Analytics Analyst",
