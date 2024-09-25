@@ -62,9 +62,18 @@ st.markdown(
         font-size: 0.9em;
         color: #777;
     }
-    .experience-description, .education-description {
+    
+     .experience-description, .education-description {
         font-size: 0.9em;
         margin-top: 5px;
+    }
+    .experience-description ul {
+        /*list-style-type: none;   Optional: Remove bullet points if needed */
+        padding-left: 0;
+    }
+    .experience-description li {
+        font-size: 0.9em;  /* Ensure the correct font size */
+        line-height: 1.5;   /* Adjust line height for better readability */
     }
     </style>
     """,
@@ -180,34 +189,37 @@ with tabs[3]:
             "role": "Machine Learning Engineer",
             "company": "Confidential",
             "duration": "Aug '24 - Present",
-           "description": ["Working at an early-stage startup, building and integrating AI applications to the product, enhancing product experience."]
+            "description": ["Working at an early-stage startup, building and integrating AI applications to the product, enhancing product experience."]
         },
         {
             "role": "Trainee - Data Scientist",
             "company": "360DigiTMG",
             "duration": "Jun '24 - Present",
-           "description": ["Working as a trainee, building end-to-end Data Science projects according to client requirements."]
+            "description": ["Working as a trainee, building end-to-end Data Science projects according to client requirements."]
         },
-         {
+        {
             "role": "Intern - Supply Chain Analytics Analyst",
             "company": "Ecolab",
             "duration": "Jan '24 - Apr '24",
-            "description": ["Worked on 5 projects in analytics and automation, analyzing problems and creating custom solutions according to requirements.",
-            "Created dashboards, low-code applications and automated workflows using the Power Platform, increasing efficiency by 17%.",
-            "Developed Python automation scripts, speeding up business processes by 15%",
-            "Conduct exploratory data analysis (EDA) on logistics data to identify patterns, anomalies, and validate hypotheses.",
-            "Performed ad-hoc analysis using SQL and data integration using Azure Data Factory."]
+            "description": [
+                "Worked on 5 projects in analytics and automation, analyzing problems and creating custom solutions according to requirements.",
+                "Created dashboards, low-code applications and automated workflows using the Power Platform, increasing efficiency by 17%.",
+                "Developed Python automation scripts, speeding up business processes by 15%",
+                "Conduct exploratory data analysis (EDA) on logistics data to identify patterns, anomalies, and validate hypotheses.",
+                "Performed ad-hoc analysis using SQL and data integration using Azure Data Factory."
+            ]
         },
-         {
+        {
             "role": "Intern - SEO and Content Writer",
             "company": "Amber",
             "duration": "Apr '23 - Oct '23",
-            "description": ["Wrote and optimized 75+ B2C blogs, driving 300k+ traffic by Oct 2023. Additionally, crafted 100+ property descriptions for international PBSA and optimized search page content for 120+ countries, states, cities, and universities.",
-"Developed 40+ YouTube scripts (short and long-form), pin descriptions, and web stories.",
-"Curated 2.5K+ property reviews for strategic analysis (UGC).",
-"Conducted technical SEO audits and regular content quality assessments.",
-"Created monthly performance dashboards using Looker Studio."
-]
+            "description": [
+                "Wrote and optimized 75+ B2C blogs, driving 300k+ traffic by Oct 2023. Additionally, crafted 100+ property descriptions for international PBSA and optimized search page content for 120+ countries, states, cities, and universities.",
+                "Developed 40+ YouTube scripts (short and long-form), pin descriptions, and web stories.",
+                "Curated 2.5K+ property reviews for strategic analysis (UGC).",
+                "Conducted technical SEO audits and regular content quality assessments.",
+                "Created monthly performance dashboards using Looker Studio."
+            ]
         }
     ]
 
@@ -216,18 +228,18 @@ with tabs[3]:
 
         st.markdown(
             f"""
-        <div class="experience-entry">
-            <div class="experience-role">{experience["role"]}</div>
-            <div class="experience-company">{experience["company"]}</div>
-            <div class="experience-duration">{experience["duration"]}</div>
-            <div class="experience-description">
-                <ul>
-                    {description_list_items}
-                </ul>
+            <div class="experience-entry">
+                <div class="experience-role">{experience["role"]}</div>
+                <div class="experience-company">{experience["company"]}</div>
+                <div class="experience-duration">{experience["duration"]}</div>
+                <div class="experience-description">
+                    <ul>
+                        {description_list_items}
+                    </ul>
+                </div>
             </div>
-        </div>
-        """,
-        unsafe_allow_html=True
+            """,
+            unsafe_allow_html=True
         )
     st.markdown('</div>', unsafe_allow_html=True)
 
