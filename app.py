@@ -130,7 +130,7 @@ with tabs[1]:
         {"title": "Financial Analysis- CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
         {"title": "Car Price Prediction", "description": "Car price prediction model using Linear Regression using data from Quikr.com. Built a web application with Flask to provide user-friendly predictions based on car details.", "image": "car.jpg", "link": "https://github.com/karma48/Car-Price-Prediction"},
        {"title": "Stock Market Analysis and Prediction", "description": "Yet to be added.", "image": "stockmarket.jpg", "link": "https://github.com/karma48"},
-      {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "customer.jpg", "image": "https://via.placeholder.com/250", "link": "https://github.com/karma48"},
+      {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "Yet to be added.", "image": "customer.jpg", "link": "https://github.com/karma48"},
        {"title": "Credit Card Fraud Detection", "description": "Yet to be added.", "image": "creditcard.jpg", "link": "https://github.com/karma48"},
       {"title": "Music Recommendation System", "description": "Yet to be added.", "image": "music.jpg", "link": "https://github.com/karma48"},
       {"title": "Rain Prediction", "description": "Yet to be added.", "image": "rain.jpg", "link": "https://github.com/karma48"},
