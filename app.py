@@ -135,7 +135,7 @@ with tabs[1]:
       {"title": "Music Recommendation System", "description": "Yet to be added.", "image": "https://via.placeholder.com/250", "link": "https://github.com/karma48"},
       {"title": "Rain Prediction", "description": "Yet to be added.", "image": "https://via.placeholder.com/250", "link": "https://github.com/karma48"},
        {"title": "Real Estate Price Prediction", "description": "Yet to be added.", "image": "https://via.placeholder.com/250", "link": "https://github.com/karma48"},
-      {"title": "Twitter Sentiment Analysis", "description": "Yet to be added.", "image": "https://via.placeholder.com/250", "link": "https://github.com/karma48"},
+      {"title": "Twitter Sentiment Analysis", "description": "Yet to be added.", "image": "twitter.jpg", "link": "https://github.com/karma48"},
     ]
 
     for project in project_data:
