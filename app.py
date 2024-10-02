@@ -75,6 +75,10 @@ st.markdown(
         font-size: 0.9em;  /* Ensure the correct font size */
         line-height: 1.5;   /* Adjust line height for better readability */
     }
+    .col1, col_space, col2 {
+    display: flex;
+    align-items: center; /* Align the text vertically to the center */
+}
     </style>
     """,
     unsafe_allow_html=True
