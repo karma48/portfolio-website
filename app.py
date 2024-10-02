@@ -114,11 +114,11 @@ with tabs[0]:
     with col2:
         st.write("""
 **Some Things About Me**
-- I’m an ML Engineer with a strong understanding of machine learning techniques, including supervised and unsupervised learning.
-I’m currently learning more about NLP and computer vision to enhance my skills.
-- My goal is to be among the top 1% of AI engineers and work on exciting AI projects.
-- I enjoy working in startups where I can learn quickly and make an impact.
-I’m all about personal growth — I’m a calm, down-to-earth person who loves reading, learning, and staying fit.
+- I’m an ML Engineer skilled in supervised and unsupervised learning, currently expanding my knowledge in NLP and computer vision. My goal is to be in the top 1% of AI engineers, working on impactful projects.
+
+- I thrive in startup environments where I can learn fast and contribute meaningfully. Personal growth is key for me—I stay calm, focused, and constantly seek to improve.
+
+- I'm passionate about technology's future and driven to be part of the innovation. I also value sustainability and actively volunteer to make a positive difference in my community.
 """)
         st.markdown('</div>', unsafe_allow_html=True)
 
