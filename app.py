@@ -17,11 +17,11 @@ st.markdown(
         margin-top: 10px; /* Adjust to move content up */
     }
     .section-image {
-            margin: 20px 0;
-            max-width: 80px; /* Adjust max width */
-            max-height: 80px; /* Adjust max height */
-            border-radius: 10px;
-        }
+        margin: 20px 0;
+        max-width: 80px; /* Adjust max width */
+        max-height: 80px; /* Adjust max height */
+        border-radius: 10px;
+    }
     .skills-row {
         display: flex;
         justify-content: center;
@@ -62,8 +62,7 @@ st.markdown(
         font-size: 0.9em;
         color: #777;
     }
-    
-     .experience-description, .education-description {
+    .experience-description, .education-description {
         font-size: 0.9em;
         margin-top: 5px;
     }
@@ -75,10 +74,28 @@ st.markdown(
         font-size: 0.9em;  /* Ensure the correct font size */
         line-height: 1.5;   /* Adjust line height for better readability */
     }
-    .col1, col_space, col2 {
-    display: flex;
-    align-items: center; /* Align the text vertically to the center */
-}
+    /* Adjusting the project layout */
+    .project-row {
+        display: flex;
+        align-items: center; /* Vertically center align text with images */
+        margin-bottom: 20px;
+    }
+    .project-row .project-image {
+        width: 120px;
+        height: 120px;
+    }
+    .project-row .project-details {
+        margin-left: 20px;
+        flex: 1;
+    }
+    .project-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .project-description {
+        font-size: 0.9em;
+        color: #555;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -100,7 +117,6 @@ with col2:
     st.markdown(f'<a href="{resume_link}" target="_blank"><button style="padding: 8px 16px; background-color: #FF4B4B; color: white; border: none; border-radius: 7px; cursor: pointer;">Resume</button></a>', unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
-
 
 # Tabs for navigation
 tabs = st.tabs(["About Me", "Projects", "Skills", "Experience", "Education", "Contact"])
@@ -143,17 +159,19 @@ with tabs[1]:
     ]
 
     for project in project_data:
-        # Create three columns: one for the image, one for spacing, and one for the text
-        col1, col_space, col2 = st.columns([1, 0.1, 2])
+        # Create project rows with image and text
+        st.markdown('<div class="project-row">', unsafe_allow_html=True)
+        col1, col2 = st.columns([1, 2])
         
         with col1:
-            st.image(project["image"], caption=project["title"], use_column_width=True)
+            st.image(project["image"], caption=project["title"], use_column_width=True, class_="project-image")
  
         with col2:
-            # Styled project title with link, but no blue color or underline
+            # Styled project title with link, centered vertically with image
             st.markdown(f'<a href="{project["link"]}" class="project-link"><h3>{project["title"]}</h3></a>', unsafe_allow_html=True)
-            st.write(project["description"])
-    
+            st.write(f'<div class="project-description">{project["description"]}</div>', unsafe_allow_html=True)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Skills Section
