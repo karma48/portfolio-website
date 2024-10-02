@@ -129,13 +129,13 @@ with tabs[1]:
         {"title": "Marketing Campaign Analysis", "description": "A/B testing of marketing campaigns to select the optimal advertising platform (AdWords, FB Ads), regression analysis to predict conversion rates and improve sales performance.", "image": "marketing.png", "link": "https://github.com/karma48/Marketing-Campaign-Analysis-A-B-Testing"},
         {"title": "Financial Analysis- CAPM Web App", "description": "Web application to perform CAPM calculations for stocks with Yahoo Finance data. It calculates expected returns and visualizes the results.", "image": "finance.jpg", "link": "https://github.com/karma48/CAPM"},
         {"title": "Car Price Prediction", "description": "Car price prediction model using Linear Regression using data from Quikr.com. Built a web application with Flask to provide user-friendly predictions based on car details.", "image": "car.jpg", "link": "https://github.com/karma48/Car-Price-Prediction"},
-       {"title": "Stock Market Analysis and Prediction", "description": "", "image": "stockmarket.jpg", "link": "https://github.com/karma48"},
-      {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "", "image": "customer.jpg", "link": "https://github.com/karma48"},
-       {"title": "Credit Card Fraud Detection", "description": "", "image": "creditcard.jpg", "link": "https://github.com/karma48"},
+       {"title": "Stock Market Analysis and Prediction", "description": "Analyzes stock data for tech giants like Apple and Amazon, using Python for visualization and LSTM for price prediction.", "image": "stockmarket.jpg", "link": "https://github.com/karma48"},
+      {"title": "Customer Segmentation using K-Means Clustering Analysis", "description": "Uses K-Means clustering to segment customers based on age, income, and spending behavior from the Mall Customer Segmentation dataset", "image": "customer.jpg", "link": "https://github.com/karma48"},
+       {"title": "Credit Card Fraud Detection", "description": "Detecting credit card fraud using a highly imbalanced dataset of anonymized European transactions, applying PCA for feature transformation.", "image": "creditcard.jpg", "link": "https://github.com/karma48"},
+       {"title": "Real Estate Price Prediction", "description": "Uses the Bengaluru House Price dataset to build a machine learning model that predicts property prices based on features like area, location, size, and more.", "image": "real estate.jpg", "link": "https://github.com/karma48"},
+      {"title": "Twitter Sentiment Analysis", "description": "Performs sentiment analysis on company-related tweets using Logistic Regression and XGBoost, applying NLP techniques with libraries like wordcloud and sklearn.", "image": "twitter.jpg", "link": "https://github.com/karma48"},
       {"title": "Music Recommendation System", "description": "", "image": "music.jpg", "link": "https://github.com/karma48"},
-      {"title": "Rain Prediction", "description": "", "image": "rain.jpg", "link": "https://github.com/karma48"},
-       {"title": "Real Estate Price Prediction", "description": "", "image": "real estate.jpg", "link": "https://github.com/karma48"},
-      {"title": "Twitter Sentiment Analysis", "description": "", "image": "twitter.jpg", "link": "https://github.com/karma48"},
+      {"title": "Rain Prediction Using ANN", "description": "", "image": "rain.jpg", "link": "https://github.com/karma48"},
     ]
 
     for project in project_data:
